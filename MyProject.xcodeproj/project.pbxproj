@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32D6C3D2BF8C4A500BC1BF8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C32D6C3C2BF8C4A500BC1BF8 /* Realm */; };
+		C32D6C412BF8CA6A00BC1BF8 /* HeaderUiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D6C402BF8CA6A00BC1BF8 /* HeaderUiView.swift */; };
+		C32D6C432BF8D11E00BC1BF8 /* DownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32D6C422BF8D11E00BC1BF8 /* DownloadViewController.swift */; };
 		C373232D2BF0B67C0059EB80 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C373232C2BF0B67C0059EB80 /* SDWebImage */; };
 		C373232F2BF0B67C0059EB80 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C373232E2BF0B67C0059EB80 /* SDWebImageMapKit */; };
 		C3D94B592BEE98B000566535 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D94B582BEE98B000566535 /* AppDelegate.swift */; };
@@ -18,13 +21,13 @@
 		C3D94B732BEE99FB00566535 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D94B722BEE99FB00566535 /* SearchViewController.swift */; };
 		C3D94B752BEE9A0D00566535 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D94B742BEE9A0D00566535 /* UpcomingViewController.swift */; };
 		C3D94B782BEE9B4B00566535 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C3D94B772BEE9B4B00566535 /* SnapKit */; };
-		C3D94B7A2BEE9B4B00566535 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C3D94B792BEE9B4B00566535 /* SnapKit-Dynamic */; };
 		C3D94B812BEE9F5B00566535 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D94B802BEE9F5B00566535 /* CollectionViewTableViewCell.swift */; };
 		C3D94B842BEEA4A200566535 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3D94B832BEEA4A200566535 /* Alamofire */; };
-		C3D94B862BEEA4A200566535 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C3D94B852BEEA4A200566535 /* AlamofireDynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C32D6C402BF8CA6A00BC1BF8 /* HeaderUiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderUiView.swift; sourceTree = "<group>"; };
+		C32D6C422BF8D11E00BC1BF8 /* DownloadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadViewController.swift; sourceTree = "<group>"; };
 		C3D94B552BEE98B000566535 /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D94B582BEE98B000566535 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3D94B5C2BEE98B000566535 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,11 +47,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D94B842BEEA4A200566535 /* Alamofire in Frameworks */,
-				C3D94B862BEEA4A200566535 /* AlamofireDynamic in Frameworks */,
 				C3D94B782BEE9B4B00566535 /* SnapKit in Frameworks */,
-				C3D94B7A2BEE9B4B00566535 /* SnapKit-Dynamic in Frameworks */,
 				C373232F2BF0B67C0059EB80 /* SDWebImageMapKit in Frameworks */,
 				C373232D2BF0B67C0059EB80 /* SDWebImage in Frameworks */,
+				C32D6C3D2BF8C4A500BC1BF8 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,11 +92,12 @@
 		C3D94B6D2BEE996C00566535 /* ControllersNetflix */ = {
 			isa = PBXGroup;
 			children = (
+				C3D94B5C2BEE98B000566535 /* ViewController.swift */,
 				C3D94B702BEE99DC00566535 /* HomeViewController.swift */,
 				C3D94B742BEE9A0D00566535 /* UpcomingViewController.swift */,
 				C3D94B722BEE99FB00566535 /* SearchViewController.swift */,
-				C3D94B5C2BEE98B000566535 /* ViewController.swift */,
 				C3D94B6E2BEE99C500566535 /* AccountViewController.swift */,
+				C32D6C422BF8D11E00BC1BF8 /* DownloadViewController.swift */,
 			);
 			path = ControllersNetflix;
 			sourceTree = "<group>";
@@ -103,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				C3D94B802BEE9F5B00566535 /* CollectionViewTableViewCell.swift */,
+				C32D6C402BF8CA6A00BC1BF8 /* HeaderUiView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -154,11 +158,10 @@
 			name = MyProject;
 			packageProductDependencies = (
 				C3D94B772BEE9B4B00566535 /* SnapKit */,
-				C3D94B792BEE9B4B00566535 /* SnapKit-Dynamic */,
 				C3D94B832BEEA4A200566535 /* Alamofire */,
-				C3D94B852BEEA4A200566535 /* AlamofireDynamic */,
 				C373232C2BF0B67C0059EB80 /* SDWebImage */,
 				C373232E2BF0B67C0059EB80 /* SDWebImageMapKit */,
+				C32D6C3C2BF8C4A500BC1BF8 /* Realm */,
 			);
 			productName = MyProject;
 			productReference = C3D94B552BEE98B000566535 /* MyProject.app */;
@@ -192,6 +195,7 @@
 				C3D94B762BEE9B4B00566535 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C3D94B822BEEA4A200566535 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				C373232B2BF0B67C0059EB80 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				C387453C2BF5043300501CD9 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = C3D94B562BEE98B000566535 /* Products */;
 			projectDirPath = "";
@@ -223,9 +227,11 @@
 				C3D94B712BEE99DC00566535 /* HomeViewController.swift in Sources */,
 				C3D94B5D2BEE98B000566535 /* ViewController.swift in Sources */,
 				C3D94B812BEE9F5B00566535 /* CollectionViewTableViewCell.swift in Sources */,
+				C32D6C432BF8D11E00BC1BF8 /* DownloadViewController.swift in Sources */,
 				C3D94B592BEE98B000566535 /* AppDelegate.swift in Sources */,
 				C3D94B6F2BEE99C500566535 /* AccountViewController.swift in Sources */,
 				C3D94B752BEE9A0D00566535 /* UpcomingViewController.swift in Sources */,
+				C32D6C412BF8CA6A00BC1BF8 /* HeaderUiView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +456,14 @@
 				minimumVersion = 5.19.2;
 			};
 		};
+		C387453C2BF5043300501CD9 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		C3D94B762BEE9B4B00566535 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -469,6 +483,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C32D6C3C2BF8C4A500BC1BF8 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C387453C2BF5043300501CD9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
 		C373232C2BF0B67C0059EB80 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C373232B2BF0B67C0059EB80 /* XCRemoteSwiftPackageReference "SDWebImage" */;
@@ -484,20 +503,10 @@
 			package = C3D94B762BEE9B4B00566535 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		C3D94B792BEE9B4B00566535 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3D94B762BEE9B4B00566535 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
 		C3D94B832BEEA4A200566535 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C3D94B822BEEA4A200566535 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		C3D94B852BEEA4A200566535 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3D94B822BEEA4A200566535 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

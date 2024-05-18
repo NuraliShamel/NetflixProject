@@ -13,7 +13,18 @@ class HomeViewController: UIViewController {
         view.addSubview(TableView)
         TableView.delegate = self
         TableView.dataSource = self
+        configureNavigationBar()
+        let headerView = HeaderUiView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 500))
+        TableView.tableHeaderView = headerView
     }
+    
+    private func configureNavigationBar() {
+        var image = UIImage(named: "netflixLogo")
+        image = image?.withRenderingMode(.alwaysOriginal)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .done, target: self, action: nil)
+        
+    }
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         TableView.frame = view.bounds
